@@ -1,11 +1,11 @@
 package com.triscent.pages;
 
-import org.openqa.selenium.WebDriver;
+import com.microsoft.playwright.Page;
 
 public class OrderPage {
-    WebDriver driver;
+    Page page;
 
-    public OrderPage(WebDriver driver) {
-        this.driver = driver;
+    public OrderPage(Page page) {
+        this.page = page;
     }
 }

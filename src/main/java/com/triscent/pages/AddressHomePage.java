@@ -1,38 +1,28 @@
 package com.triscent.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
-
-import java.util.List;
+import com.microsoft.playwright.Page;
 
 public class AddressHomePage {
 
-    private static @FindBy(xpath = "//input[@value='Add new']") WebElement addNewButton;
-    private static WebDriver driver;
+    private static Page page;
 
-    private static @FindBy(xpath = "//input[@value='Edit']") WebElement edit;
-    private static @FindBy(xpath = "//input[@value='Delete']") WebElement delete;
-
-    public AddressHomePage(WebDriver driver){
-        this.driver = driver;
+    public AddressHomePage(Page page){
+        this.page = page;
     }
     public static void clickAddNewAddressButton(){
-        addNewButton.click();
+        page.click("input[value='Add new']");
     }
 
     public static int noOfAddresses(){
-        return driver.findElements(By.cssSelector("div[class='section address-item']")).size();
+        return page.querySelectorAll("div[class='section address-item']").size();
     }
     public static void deleteAddress(int addressNumber){
-        driver.findElements(By.xpath("//input[@value='Delete']")).get(addressNumber-1).click();
-        driver.switchTo().alert().accept();
+        page.onDialog(dialog -> dialog.accept());
+        page.querySelectorAll("//input[@value='Delete']").get(addressNumber-1).click();
     }
 
     public static void editAddress(int addressNumber){
-        driver.findElements(By.xpath("//input[@value='Edit']["+addressNumber+"]")).get(addressNumber-1).click();
-        driver.switchTo().alert().accept();
+        page.onDialog(dialog -> dialog.accept());
+        page.querySelectorAll("//input[@value='Edit']").get(addressNumber-1).click();
     }
 }

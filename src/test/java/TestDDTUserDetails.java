@@ -20,7 +20,7 @@ public class TestDDTUserDetails extends BaseTest {
     @Test(dataProvider = "userdetails", description = "This test is used to check user credentials by data driven testing")
     public void testLogin(String username, String password, String expected) {
         assertTrue(WebShopHome.verifyTitle());
-        wakeUpAfter(1000);
+        //wakeUpAfter(1000);
         HeaderLinksSupport.clickLogin();
         loginPage.withUsername(username).andPassword(password).login();
         boolean result = Boolean.parseBoolean(expected);

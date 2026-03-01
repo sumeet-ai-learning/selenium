@@ -1,69 +1,42 @@
 package com.triscent.pages;
 
-import static com.triscent.utilities.BrowserHelper.wakeUpAfter;
+import com.microsoft.playwright.ElementHandle;
+import com.microsoft.playwright.Page;
 import static com.triscent.utilities.LogUtility.log;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
-import static com.triscent.utilities.DriverSetup.isElementPresent;
-
 public class CartPage {
-    private static WebDriver driver;
+    private static Page page;
 
     private static final String TITLE = "Demo Web Shop. Shopping Cart";
-    private static @FindBy(name = "checkout")
-    WebElement checkoutButton;
-    private static @FindBy(name = "termsofservice")
-    WebElement termsCheckBox;
-    private static @FindBy(name = "updatecart")
-    WebElement updateCart;
-    private static @FindBys(@FindBy(xpath = "//input[@name='removefromcart']"))
-    List<WebElement> productList;
-    private static @FindBy(name = "discountcouponcode")
-    WebElement discountTextBox;
-    private static @FindBy(name = "applydiscountcouponcode")
-    WebElement applyDiscountCodeButton;
-    //private static @FindBy(css = "div.message") WebElement message;
-    private static @FindBy(name = "removediscountcouponcode")
-    WebElement removeDiscountCodeButton;
     private static final String successfulDiscountCodeMessage = "The coupon code was applied";
 
-    public CartPage(WebDriver driver) {
-        if (driver == null)
-            log.error("Driver is null as Cart Page");
-        this.driver = driver;
+    public CartPage(Page page) {
+        if (page == null)
+            log.error("Page is null as Cart Page");
+        this.page = page;
     }
 
     public static boolean verifyTitle() {
-        return TITLE.equals(driver.getTitle());
+        return TITLE.equals(page.title());
     }
 
     public static void checkTermsAndConditions() {
-        WebDriverWait wait = new WebDriverWait(driver, 5);
-        wait.until(ExpectedConditions.visibilityOf(termsCheckBox));
-        termsCheckBox.click();
+        page.waitForSelector("#termsofservice");
+        page.click("#termsofservice");
     }
 
     public static void checkout() {
-        checkoutButton.click();
+        page.click("#checkout");
     }
 
     public static boolean removeItem(String productName) throws Exception {
         String xpath = "//*[text()='" + productName + "' and @class='product-name']/ancestor::td/preceding-sibling::td[@class='remove-from-cart']";
-        boolean checkProduct = isElementPresent(By.xpath(xpath));
-        if (checkProduct) {
-            driver.findElement(By.xpath(xpath + "/input[@name='removefromcart']")).click();
-            updateCart.click();
-            wakeUpAfter(100);
+        if (page.isVisible(xpath)) {
+            page.click(xpath + "/input[@name='removefromcart']");
+            page.click("#updatecart");
+            page.waitForTimeout(100);
             return true;
         } else {
             log.info("Invalid Product. Product not found.");
@@ -71,17 +44,17 @@ public class CartPage {
         }
     }
 
-    public static List<WebElement> getAllCartItems() {
-        return productList;
+    public static List<ElementHandle> getAllCartItems() {
+        return page.querySelectorAll("//input[@name='removefromcart']");
     }
 
     public static boolean emptyCart() {
-        List<WebElement> cartItemCheckBox = getAllCartItems();
+        List<ElementHandle> cartItemCheckBox = getAllCartItems();
 
         if (cartItemCheckBox.size() > 0) {
-                cartItemCheckBox.forEach(product -> product.click());
-                updateCart.click();
-                wakeUpAfter(200);
+                cartItemCheckBox.forEach(ElementHandle::click);
+                page.click("#updatecart");
+                page.waitForTimeout(200);
             return true;
         } else {
             return false;
@@ -89,20 +62,19 @@ public class CartPage {
     }
 
     public static void applyDiscountCode(String discountCode) {
-        discountTextBox.clear();
-        discountTextBox.sendKeys(discountCode);
-        applyDiscountCodeButton.click();
+        page.fill("#discountcouponcode", discountCode);
+        page.click("#applydiscountcouponcode");
     }
 
     public static void removeDiscountCode() {
-        removeDiscountCodeButton.click();
+        page.click("#removediscountcouponcode");
     }
 
     public static boolean verifyDiscountCode() {
-        By messageBox = By.cssSelector("div.message");
-           if(!isElementPresent(messageBox))
+        String messageBox = "div.message";
+           if(!page.isVisible(messageBox))
                return false;
-        if (driver.findElement(messageBox).getText().equals(successfulDiscountCodeMessage))
+        if (page.innerText(messageBox).equals(successfulDiscountCodeMessage))
             return true;
         else
             return false;

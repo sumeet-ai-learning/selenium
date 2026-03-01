@@ -36,9 +36,9 @@ public class TestRemoveItemFromCartDemo extends BaseTest{
         addToCart();
         clickShoppingCartButton();
         checkTermsAndConditions();
-        takeScreenShot(driver,"filled_cart.png");
+        takeScreenShot(page,"filled_cart.png");
         removeItem("Casual Golf Belt");
         assertEquals(getAllCartItems().size(), 0) ;
-        takeScreenShot(driver,"empty_cart.png");
+        takeScreenShot(page,"empty_cart.png");
     }
 }

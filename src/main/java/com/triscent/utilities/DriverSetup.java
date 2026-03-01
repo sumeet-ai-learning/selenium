@@ -1,65 +1,51 @@
 package com.triscent.utilities;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-
-import java.util.concurrent.TimeUnit;
+import com.microsoft.playwright.*;
 
 public final class DriverSetup {
 
-    private static WebDriver driver;
+    private static Playwright playwright;
+    private static Browser browser;
+    private static BrowserContext context;
+    private static Page page;
 
     //      Hiding the Constructor
     private DriverSetup() {
     }
 
-    //Method to create the common setting
-    private static void driverCommonSetting() {
-        //Ensure the driver is set by using any of open* method
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-    }
-
     //Method to invoke Firefox Driver
-    public static WebDriver openFirefox() {
-        driver = new FirefoxDriver();
-        driverCommonSetting();
-        return driver;
+    public static Page openFirefox() {
+        playwright = Playwright.create();
+        browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        context = browser.newContext(new Browser.NewContextOptions().setStrictSelectors(false));
+        page = context.newPage();
+        return page;
     }
 
     //Method to invoke Chrome Driver
-    public static WebDriver openChrome() {
-        driver = new ChromeDriver();
-        driverCommonSetting();
-        driver.manage().window().maximize();
-        return driver;
-    }
-
-    public static boolean isElementPresent(By by) {
-        try {
-            if(driver.findElements(by).size()>0)
-                return true;
-            else
-                return false;
-        } catch (org.openqa.selenium.NoSuchElementException e) {
-            return false;
-        }
-    }
-
-    public static boolean isElementPresent(WebElement element) {
-        return element == null ? true : false;
+    public static Page openChrome() {
+        playwright = Playwright.create();
+        browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        context = browser.newContext(new Browser.NewContextOptions().setStrictSelectors(false));
+        page = context.newPage();
+        return page;
     }
 
     public static void closeBrowser() {
-        driver.close();
+        if (page != null) page.close();
     }
 
     public static void quitBrowser() {
-        driver.quit();
+        if (context != null) context.close();
+        if (browser != null) browser.close();
+        if (playwright != null) playwright.close();
     }
 
+    public static Page getPage() {
+        return page;
+    }
 
+    public static BrowserContext getContext() {
+        return context;
+    }
 }

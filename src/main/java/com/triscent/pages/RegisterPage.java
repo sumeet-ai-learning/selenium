@@ -1,85 +1,75 @@
 package com.triscent.pages;
 
+import com.microsoft.playwright.Page;
 import com.triscent.support.Gender;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import static com.triscent.utilities.DriverSetup.isElementPresent;
 
 public class RegisterPage {
-    private static WebDriver driver;
+    private static Page page;
 
-    private static @FindBy(id = "gender-male") WebElement maleRadioButton;
-    private static @FindBy(id = "gender-female") WebElement femaleRadioButton;
-    private static @FindBy(name = "FirstName") WebElement firstName;
-    private static @FindBy(name = "LastName") WebElement lastName;
-    private static @FindBy(name = "Email") WebElement email;
-    private static @FindBy(name = "Password") WebElement password;
-    private static @FindBy(name = "ConfirmPassword") WebElement confirmPassword;
-    private static @FindBy(id="register-button") WebElement registerButton;
-    private static @FindBy(className = "result") WebElement result;
-    private static @FindBy(xpath = "//span[@for='ConfirmPassword']") WebElement passwordNotMatch;
     private static final String TITLE= "Demo Web Shop. Register";
 
-    public boolean verifyTitle(){
-        return TITLE.equals(driver.getTitle());
+    public RegisterPage(Page page) {
+        this.page = page;
     }
 
-    public RegisterPage(WebDriver driver) {
-        this.driver = driver;
+    public static boolean verifyTitle(){
+        return TITLE.equals(page.title());
+    }
+
+    public void init(Page page) { // This method should not be static
+        this.page = page;
     }
 
     public static void clickRegisterButton(){
-        registerButton.click();
+        page.click("#register-button");
     }
 
     public static String getErrorMessageForPasswordMatch(){
-        return passwordNotMatch.getText();
+        return page.innerText("//span[@for='ConfirmPassword']");
     }
 
     public static void selectGender(Gender gender){
         if (gender.name().equals("MALE")) {
-            maleRadioButton.click();
+            page.click("#gender-male");
         } else if (gender.name().equals("FEMALE")) {
-            femaleRadioButton.click();
+            page.click("#gender-female");
         }
     }
 
     public static void selectGender(String gender){
         if (gender.equalsIgnoreCase("MALE")) {
-            maleRadioButton.click();
+            page.click("#gender-male");
         } else if (gender.equalsIgnoreCase("FEMALE")) {
-            femaleRadioButton.click();
+            page.click("#gender-female");
         }
     }
 
     public static void enterFirstName(String firstName){
-        RegisterPage.firstName.sendKeys(firstName);
+        page.fill("input[name='FirstName']", firstName);
     }
 
     public static void enterLastName(String lastName){
-        RegisterPage.lastName.sendKeys(lastName);
+        page.fill("input[name='LastName']", lastName);
     }
 
     public static void enterEmail(String email){
-        RegisterPage.email.sendKeys(email);
+        page.fill("input[name='Email']", email);
     }
 
     public static void enterPassword(String password){
-        RegisterPage.password.sendKeys(password);
+        page.fill("input[name='Password']", password);
     }
 
     public static void enterConfirmPassword(String repassword){
-        RegisterPage.confirmPassword.sendKeys(repassword);
+        page.fill("input[name='ConfirmPassword']", repassword);
     }
 
     public static boolean verifyRegister(){
-            WebDriverWait wait = new WebDriverWait(driver,5);
-            wait.until(ExpectedConditions.visibilityOf(result));
-            isElementPresent(result);
-            return  result.getText().equals("Your registration completed");
+            page.waitForSelector(".result");
+            return  page.innerText(".result").equals("Your registration completed");
+    }
+
+    public static String getRegisterSuccessMessage(){
+        return page.innerText(".result");
     }
 }

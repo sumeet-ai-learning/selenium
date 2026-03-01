@@ -1,37 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="69eeb40c-aa92-4d26-aaba-0f36dc1b7002" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestDiscountFunctionality.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/AddressAddPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/AddressAddPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/AddressHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/AddressHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/CreditCardPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/CreditCardPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/HeaderLinksSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/HeaderLinksSupport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/MyAccountOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/MyAccountOptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/OrderConfirmPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/OrderConfirmPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/OrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/OrderProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/OrderProduct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/ProductHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/ProductHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/WebShopHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/WebShopHome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/support/ProductSelectorHelperMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/support/ProductSelectorHelperMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/support/products/BlueJeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/support/products/BlueJeans.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/BrowserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/BrowserHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/DriverSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/DriverSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/PropertiesSetUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/PropertiesSetUp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/ExcelUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/ExcelUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestAddNewAddressAndDeleteAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestAddNewAddressAndDeleteAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestAllProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestAllProductCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestBuyAProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBuyAProduct.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestDDTUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDDTUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRemoveItemFromCartDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRemoveItemFromCartDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/exceptions/LoginError.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/exceptions/LoginError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/AddressAddPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/AddressAddPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/AddressHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/AddressHomePage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/CartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/CartPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/CheckoutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/CheckoutPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/CreditCardPayment$CreditCardType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/CreditCardPayment$CreditCardType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/CreditCardPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/CreditCardPayment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/HeaderLinksSupport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/HeaderLinksSupport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/MyAccountOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/MyAccountOptions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/OrderConfirmPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/OrderConfirmPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/OrderPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/OrderPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/OrderProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/OrderProduct.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/PaymentMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/PaymentMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/ProductHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/ProductHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/RegisterPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/ShippingMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/ShippingMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/WebShopHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/WebShopHome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/Address$AddressBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/Address$AddressBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/Categories.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/Categories.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/Gender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductSelectorHelperMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductSelectorHelperMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$ELECTONICS$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$ELECTONICS$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$ELECTONICS$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$ELECTONICS$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$ELECTONICS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$ELECTONICS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/SortBy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/SortBy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/products/BlueJeans.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/utilities/BrowserHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/utilities/BrowserHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/utilities/CSVUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/utilities/CSVUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/utilities/DriverSetup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/utilities/DriverSetup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/utilities/ExcelUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/utilities/LogUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/utilities/LogUtility.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/utilities/PropertiesSetUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/utilities/PropertiesSetUp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestAddNewAddressAndDeleteAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestAddNewAddressAndDeleteAddress.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestAllProductCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestAllProductCategory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestBuyAProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestBuyAProduct.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestDDTUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestDDTUserDetails.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRegister.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRemoveItemFromCartDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRemoveItemFromCartDemo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/UnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UnitTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UserDetailsPropertiesLoad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserDetailsPropertiesLoad.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,6 +228,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sumeet-ai-learning&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sumeet-ai-learning/selenium.git&quot;,
+    &quot;accountId&quot;: &quot;221e6977-ef07-46bc-a91c-5b9ee138ce3d&quot;
+  }
+}</component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -221,20 +291,21 @@
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="322" />
     <option name="y" value="271" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectId" id="394ESqeiQcY0Tw4tlGYYkA1CZ73" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -315,14 +386,22 @@
       <pane id="PackagesPane" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/selenium-server-standalone-3.12.0.jar!/" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.TestBuyAProduct.testOrderAPrdoduct.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.triscent.pages" />
@@ -335,191 +414,113 @@
       <recent name="C:\Users\Agrawal\IdeaProjects\Automation E2E Selenium\src\main\java\com\triscent\utilities" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="TestNG.TestDiscountFunctionality">
+  <component name="RunManager" selected="TestNG.TestBuyAProduct.testOrderAPrdoduct">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="BaseTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAllProductCategory" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation E2E Selenium" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BaseTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <listeners />
-    </configuration>
-    <configuration name="TestAllProductCategory" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Automation E2E Selenium" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestAllProductCategory" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TestBuyAProduct" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBuyAProduct" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation E2E Selenium" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestBuyAProduct" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="TestDiscountFunctionality" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestBuyAProduct.testOrderAPrdoduct" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="1.0" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestBuyAProduct" />
+      <option name="METHOD_NAME" value="testOrderAPrdoduct" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDiscountFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation E2E Selenium" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestDiscountFunctionality" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="UnitTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UnitTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation E2E Selenium" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UnitTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
+    <configuration default="true" type="TestNG">
       <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
+      <item itemvalue="TestNG.TestBuyAProduct.testOrderAPrdoduct" />
       <item itemvalue="TestNG.TestAllProductCategory" />
-      <item itemvalue="TestNG.BaseTest" />
       <item itemvalue="TestNG.TestBuyAProduct" />
       <item itemvalue="TestNG.UnitTest" />
       <item itemvalue="TestNG.TestDiscountFunctionality" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestBuyAProduct.testOrderAPrdoduct" />
         <item itemvalue="TestNG.TestDiscountFunctionality" />
         <item itemvalue="TestNG.UnitTest" />
         <item itemvalue="TestNG.TestAllProductCategory" />
         <item itemvalue="TestNG.TestBuyAProduct" />
-        <item itemvalue="TestNG.BaseTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -598,14 +599,6 @@
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49853587" weight="0.32967034" />
     </layout>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="6" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="jar://E:/Udemy/Selenium/Jars/selenium-server-standalone-3.12.0.jar!/org/openqa/selenium/support/ui/Select.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -628,7 +621,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_25/jre/lib/rt.jar!/java/lang/Boolean.class">
+    <entry file="jar://$PROJECT_DIR$/../../../../Program Files (x86)/Java/jdk1.8.0_25/jre/lib/rt.jar!/java/lang/Boolean.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
@@ -782,7 +775,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_25/jre/lib/rt.jar!/java/util/concurrent/TimeUnit.class">
+    <entry file="jar://$PROJECT_DIR$/../../../../Program Files (x86)/Java/jdk1.8.0_25/jre/lib/rt.jar!/java/util/concurrent/TimeUnit.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
           <caret line="293" column="16" selection-start-line="293" selection-start-column="16" selection-end-line="293" selection-end-column="16" />

@@ -1,49 +1,38 @@
 package com.triscent.pages;
 
-import com.triscent.utilities.DriverSetup;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-
-import static com.triscent.utilities.DriverSetup.isElementPresent;
+import com.microsoft.playwright.Page;
 
 public class HeaderLinksSupport {
 
     private static String emailId= LoginPage.getEmailId();
-    private static WebDriver driver;
-    private static @FindBy(linkText ="Log out" ) WebElement logout;
-    private static @FindBy(linkText ="Log in" ) WebElement login;
-    private static @FindBy(linkText = "Register") WebElement register;
-    private static @FindBy(partialLinkText = "Shopping cart") WebElement shoppingCart;
+    private static Page page;
 
-    public HeaderLinksSupport(WebDriver driver){
-    this.driver = driver;
+    public HeaderLinksSupport(Page page){
+    this.page = page;
     }
 
     public static void clickEmailId() {
-        driver.findElement(By.linkText(LoginPage.getEmailId())).click();
+        page.click("text=" + LoginPage.getEmailId());
     }
 
     public static boolean verifyUserLoggedIn(){
-        System.out.println(By.linkText(LoginPage.getEmailId()));
-        return (isElementPresent(By.linkText(LoginPage.getEmailId())));
+        return page.isVisible("text=" + LoginPage.getEmailId());
     }
 
     public static void clickLogout(){
-        if(!isElementPresent(logout))
-        logout.click();
+        if(page.isVisible("text=Log out"))
+        page.click("text=Log out");
     }
 
     public static void clickLogin() {
-        login.click();
+        page.click("text=Log in");
     }
 
     public static void clickShoppingCartButton(){
-        shoppingCart.click();
+        page.click("//span[text()='Shopping cart']");
     }
 
     public static void clickRegister() {
-        register.click();
+        page.click("text=Register");
     }
 }

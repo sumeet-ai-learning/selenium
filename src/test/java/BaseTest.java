@@ -1,49 +1,48 @@
+import com.microsoft.playwright.BrowserContext;
+import com.microsoft.playwright.Tracing;
 import com.triscent.pages.*;
 import com.triscent.support.ProductSelectorHelperMenu;
 import com.triscent.utilities.BrowserHelper;
 import com.triscent.utilities.DriverSetup;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.Test;
+import com.microsoft.playwright.Page;
+import org.testng.annotations.*;
 
-import java.util.concurrent.TimeUnit;
+import java.nio.file.Paths;
+import java.lang.reflect.Method;
 
 import static com.triscent.pages.WebShopHome.openWebShopHomePage;
 import static com.triscent.utilities.DriverSetup.quitBrowser;
 import static org.testng.Assert.assertTrue;
 
 /*
-*This is a base test class. It will initialize setups for drivers as well as invoke all the Page Object Class with the help of PageFactory Selenium Class.
+*This is a base test class. It will initialize setups for drivers as well as invoke all the Page Object Class.
  */
 
 public class BaseTest {
 
-    protected WebDriver driver ;
+    protected Page page;
     protected LoginPage loginPage;
     protected static final String username = UserDetailsPropertiesLoad.getUserName();
     protected static final String password = UserDetailsPropertiesLoad.getPassword();
 
     @BeforeSuite
     public void setUpSuite(){
-        driver = DriverSetup.openChrome();
-        driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
-        PageFactory.initElements(driver, WebShopHome.class);
-        PageFactory.initElements(driver, MyAccountOptions.class);
-        loginPage = PageFactory.initElements(driver, LoginPage.class);
-        PageFactory.initElements(driver, ProductHome.class);
-        PageFactory.initElements(driver, OrderProduct.class);
-        PageFactory.initElements(driver, CartPage.class);
-        PageFactory.initElements(driver, HeaderLinksSupport.class);
-        PageFactory.initElements(driver, ProductSelectorHelperMenu.class);
-        PageFactory.initElements(driver, RegisterPage.class);
-        PageFactory.initElements(driver, BrowserHelper.class);
-        PageFactory.initElements(driver,AddressAddPage.class);
-        PageFactory.initElements(driver,AddressHomePage.class);
-        PageFactory.initElements(driver, CheckoutPage.class);
-        PageFactory.initElements(driver, CreditCardPayment.class);
-        PageFactory.initElements(driver, OrderConfirmPage.class);
+        page = DriverSetup.openChrome();
+        new WebShopHome(page);
+        new MyAccountOptions(page);
+        loginPage = new LoginPage(page);
+        new ProductHome(page);
+        new OrderProduct(page);
+        new CartPage(page);
+        new HeaderLinksSupport(page);
+        new ProductSelectorHelperMenu(page);
+        new RegisterPage(page);
+        new BrowserHelper();
+        new AddressAddPage(page);
+        new AddressHomePage(page);
+        new CheckoutPage(page);
+        new CreditCardPayment(page);
+        new OrderConfirmPage(page);
     }
 
     /*
@@ -56,7 +55,29 @@ public class BaseTest {
         assertTrue(WebShopHome.verifyTitle());
     }
 
-  // @AfterSuite
+    @BeforeMethod
+    public void setupTrace() {
+        BrowserContext context = DriverSetup.getContext();
+        if (context != null) {
+            context.tracing().start(new Tracing.StartOptions()
+                    .setScreenshots(true)
+                    .setSnapshots(true)
+                    .setSources(true));
+        }
+    }
+
+    @AfterMethod
+    public void recordTrace(Method method) {
+        BrowserContext context = DriverSetup.getContext();
+        if (context != null) {
+            java.nio.file.Path tracePath = Paths.get("target/traces/" + method.getName() + ".zip");
+            tracePath.getParent().toFile().mkdirs();
+            context.tracing().stop(new Tracing.StopOptions()
+                    .setPath(tracePath));
+        }
+    }
+
+   @AfterSuite
     public void cleanUp(){
         quitBrowser();
     }

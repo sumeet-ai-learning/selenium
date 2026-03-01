@@ -3,6 +3,8 @@ import com.triscent.support.ProductType;
 import com.triscent.support.SortBy;
 import org.testng.annotations.Test;
 
+import java.time.LocalDate;
+
 import static com.triscent.pages.CartPage.checkTermsAndConditions;
 import static com.triscent.pages.CartPage.checkout;
 import static com.triscent.pages.CheckoutPage.*;
@@ -45,7 +47,7 @@ public class TestBuyAProduct extends BaseTest{
         selectCreditCardType(CreditCardPayment.CreditCardType.AMEX);
         sendCardHolderName("ABCDEF");
         sendCardNumber("12341234123");
-        selectExpiryYear("2020");
+        selectExpiryYear(String.valueOf(LocalDate.now().getYear()));
         selectExpiryMonth("03");
         sendCardCode("1234");
         clickPaymentInformationContinueButton();

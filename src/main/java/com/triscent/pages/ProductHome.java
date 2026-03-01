@@ -1,35 +1,33 @@
 package com.triscent.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.microsoft.playwright.ElementHandle;
+import com.microsoft.playwright.Page;
 
 import java.util.List;
-
-import static java.util.stream.Collectors.toList;
+import java.util.stream.Collectors;
 
 public class ProductHome {
-    private static WebDriver driver;
+    private static Page page;
 
-    public ProductHome(WebDriver driver) {
-        this.driver = driver;
+    public ProductHome(Page page) {
+        this.page = page;
     }
 
     public static void selectProduct(String product) {
-        driver.findElement(By.linkText(product)).click();
+        page.click("//h2/a[text()='" + product + "']");
     }
 
     public static List<String> listAllProductNames(){
-        List<WebElement> elementList = driver.findElements(By.xpath("//div[@class='item-box']//descendant::h2[@class]/a"));
+        List<ElementHandle> elementList = page.querySelectorAll("//div[@class='item-box']//descendant::h2[@class]/a");
         return elementList.stream()
-                .map(product->product.getText())
-                .collect(toList());
+                .map(ElementHandle::innerText)
+                .collect(Collectors.toList());
     }
 
     public static List<String> listAllProductPrices(){
-        List<WebElement> elementList = driver.findElements(By.xpath("//div[@class='item-box']//descendant::span[@class]"));
+        List<ElementHandle> elementList = page.querySelectorAll("//div[@class='item-box']//descendant::span[@class]");
         return elementList.stream()
-                .map(product->product.getText())
-                .collect(toList());
+                .map(ElementHandle::innerText)
+                .collect(Collectors.toList());
     }
 }

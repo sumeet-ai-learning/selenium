@@ -1,24 +1,18 @@
 package com.triscent.support;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
+import com.microsoft.playwright.Page;
 
 public class ProductSelectorHelperMenu {
 
-    private static WebDriver driver;
-    private static @FindBy(name = "products-orderby")
-    WebElement selectProduct;
+    private static Page page;
 
-    public ProductSelectorHelperMenu(WebDriver driver) {
-        this.driver = driver;
+    public ProductSelectorHelperMenu(Page page) {
+        this.page = page;
     }
 
     public static void sortBy(SortBy sortBy) {
         System.out.println(sortBy.getValue());
-        Select select = new Select(selectProduct);
-        select.selectByVisibleText(sortBy.getValue());
+        page.selectOption("select[name='products-orderby']", new String[]{sortBy.getValue()});
     }
 
 }

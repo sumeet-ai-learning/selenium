@@ -37,11 +37,11 @@ public class TestAddNewAddressAndDeleteAddress extends BaseTest {
         setPhoneNumber("123456789");
         setFaxNumber("12345");
         clickSaveButton();
-        wakeUpAfter(100);
+        //wakeUpAfter(100);
         assertEquals(2, noOfAddresses());
         clickAddresses();
         deleteAddress(2);
-        wakeUpAfter(100);
+        //wakeUpAfter(100);
         assertEquals(1, noOfAddresses());
     }
 }

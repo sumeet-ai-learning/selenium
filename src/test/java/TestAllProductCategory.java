@@ -14,7 +14,7 @@ public class TestAllProductCategory extends BaseTest {
         openWebShopHomePage();
         assertTrue(WebShopHome.verifyTitle());
         selectProductType(ProductType.BOOKS);
-        assertEquals(driver.getCurrentUrl(), ProductType.BOOKS.URL());
+        assertEquals(page.url(), ProductType.BOOKS.URL());
     }
 
     @Test(description = "Test Product Computer Desktops")
@@ -22,7 +22,7 @@ public class TestAllProductCategory extends BaseTest {
         openWebShopHomePage();
         assertTrue(WebShopHome.verifyTitle());
         selectProductType(ProductType.COMPUTERS.DESKTOPS);
-        assertEquals(driver.getCurrentUrl(), ProductType.COMPUTERS.DESKTOPS.URL());
+        assertEquals(page.url(), ProductType.COMPUTERS.DESKTOPS.URL());
     }
 
     @Test(description = "Test Product Computer Notebooks")
@@ -30,7 +30,7 @@ public class TestAllProductCategory extends BaseTest {
         openWebShopHomePage();
         assertTrue(WebShopHome.verifyTitle());
         selectProductType(ProductType.COMPUTERS.NOTEBOOKS);
-        assertEquals(driver.getCurrentUrl(), ProductType.COMPUTERS.NOTEBOOKS.URL());
+        assertEquals(page.url(), ProductType.COMPUTERS.NOTEBOOKS.URL());
     }
 
     @Test(description = "Test Product Computer Accessories")
@@ -38,7 +38,7 @@ public class TestAllProductCategory extends BaseTest {
         openWebShopHomePage();
         assertTrue(WebShopHome.verifyTitle());
         selectProductType(ProductType.COMPUTERS.ACCESSORIES);
-        assertEquals(driver.getCurrentUrl(), ProductType.COMPUTERS.ACCESSORIES.URL());
+        assertEquals(page.url(), ProductType.COMPUTERS.ACCESSORIES.URL());
     }
 
     @Test(description = "Test Product Electronics Camera")
@@ -46,7 +46,7 @@ public class TestAllProductCategory extends BaseTest {
         openWebShopHomePage();
         assertTrue(WebShopHome.verifyTitle());
         selectProductType(ProductType.ELECTONICS.CAMERA);
-        assertEquals(driver.getCurrentUrl(), ProductType.ELECTONICS.CAMERA.URL());
+        assertEquals(page.url(), ProductType.ELECTONICS.CAMERA.URL());
     }
 
     @Test(description = "Test Product Electronics Cell Phones")
@@ -54,7 +54,7 @@ public class TestAllProductCategory extends BaseTest {
         openWebShopHomePage();
         assertTrue(WebShopHome.verifyTitle());
         selectProductType(ProductType.ELECTONICS.CELLPHONES);
-        assertEquals(driver.getCurrentUrl(), ProductType.ELECTONICS.CELLPHONES.URL());
+        assertEquals(page.url(), ProductType.ELECTONICS.CELLPHONES.URL());
     }
 
     @Test(description = "Test Product Apparels and Shoes")
@@ -62,7 +62,7 @@ public class TestAllProductCategory extends BaseTest {
         openWebShopHomePage();
         assertTrue(WebShopHome.verifyTitle());
         selectProductType(ProductType.APPARELS);
-        assertEquals(driver.getCurrentUrl(), ProductType.APPARELS.URL());
+        assertEquals(page.url(), ProductType.APPARELS.URL());
     }
 
     @Test(description = "Test Product Digital Downloads")
@@ -70,7 +70,7 @@ public class TestAllProductCategory extends BaseTest {
         openWebShopHomePage();
         assertTrue(WebShopHome.verifyTitle());
         selectProductType(ProductType.DIGITAL_DOWNLOADS);
-        assertEquals(driver.getCurrentUrl(), ProductType.DIGITAL_DOWNLOADS.URL());
+        assertEquals(page.url(), ProductType.DIGITAL_DOWNLOADS.URL());
     }
 
     @Test(description = "Test Product Digital Downloads")
@@ -78,7 +78,7 @@ public class TestAllProductCategory extends BaseTest {
         openWebShopHomePage();
         assertTrue(WebShopHome.verifyTitle());
         selectProductType(ProductType.JEWELRY);
-        assertEquals(driver.getCurrentUrl(), ProductType.JEWELRY.URL());
+        assertEquals(page.url(), ProductType.JEWELRY.URL());
     }
 
     @Test(description = "Test Product Gift Cards")
@@ -86,7 +86,6 @@ public class TestAllProductCategory extends BaseTest {
         openWebShopHomePage();
         assertTrue(WebShopHome.verifyTitle());
         selectProductType(ProductType.GIFT_CARDS);
-        assertEquals(driver.getCurrentUrl(), ProductType.GIFT_CARDS.URL());
+        assertEquals(page.url(), ProductType.GIFT_CARDS.URL());
     }
-
 }

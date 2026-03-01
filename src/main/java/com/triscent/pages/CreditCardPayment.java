@@ -1,13 +1,15 @@
 package com.triscent.pages;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.Select;
+import com.microsoft.playwright.Page;
+import com.microsoft.playwright.options.SelectOption;
 
 public class CreditCardPayment{
 
-    private static WebDriver driver;
+    private static Page page;
+
+    public CreditCardPayment(Page page) {
+        this.page = page;
+    }
 
     public enum CreditCardType{
         VISA("Visa"), MASTERCARD("Master Card"), DISCOVER("Discover"), AMEX("Amex");
@@ -22,25 +24,18 @@ public class CreditCardPayment{
             return value;
         }
     }
-    private static @FindBy(name = "CreditCardType") WebElement selectCreditCardType;
-    private static @FindBy(name = "CardholderName") WebElement cardholderName;
-    private static @FindBy(name = "CardNumber") WebElement cardNumber;
-    private static @FindBy(name = "CardCode") WebElement cardCode;
-    private static @FindBy(name = "ExpireMonth") WebElement expireMonth;
-    private static @FindBy(name = "ExpireYear") WebElement expireYear;
 
     public static void selectCreditCardType(CreditCardType creditCardType){
-        Select select = new Select(selectCreditCardType);
-        select.selectByVisibleText(creditCardType.value);
+        page.selectOption("select[name='CreditCardType']", new String[]{creditCardType.value});
     }
 
 
     public static void sendCardHolderName(String cardHolderName){
-        CreditCardPayment.cardholderName.sendKeys(cardHolderName);
+        page.fill("input[name='CardholderName']", cardHolderName);
     }
 
     public static void sendCardNumber(String cardNumber){
-        CreditCardPayment.cardNumber.sendKeys(cardNumber);
+        page.fill("input[name='CardNumber']", cardNumber);
     }
 
     public static void selectExpiryMonth(String month){
@@ -51,16 +46,14 @@ public class CreditCardPayment{
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        Select select = new Select(expireMonth);
-        select.selectByVisibleText(month);
+        page.selectOption("select[name='ExpireMonth']", new String[]{month});
     }
 
     public static void selectExpiryYear(String year){
-        Select select = new Select(expireYear);
-        select.selectByVisibleText(year);
+        page.selectOption("#ExpireYear",new SelectOption().setValue(year));
     }
 
     public static void sendCardCode(String code){
-        cardCode.sendKeys(code);
+        page.fill("input[name='CardCode']", code);
     }
 }
