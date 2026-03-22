@@ -5,95 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69eeb40c-aa92-4d26-aaba-0f36dc1b7002" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.claude/commands/commit-code.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/agents/cucumber-ghenkins.agent.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/agents/playwright-review.agent.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AGENTS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReadExcel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReadExcelForGherkin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ReadTestCases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Checkout.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Profile.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/Search.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/AddressAddPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/AddressAddPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/AddressHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/AddressHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/CreditCardPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/CreditCardPayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/HeaderLinksSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/HeaderLinksSupport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/MyAccountOptions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/MyAccountOptions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GEMINI.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/OrderConfirmPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/OrderConfirmPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/OrderPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/OrderProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/OrderProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/ProductHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/ProductHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/pages/WebShopHome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/pages/WebShopHome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/support/ProductSelectorHelperMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/support/ProductSelectorHelperMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/support/products/BlueJeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/support/products/BlueJeans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/BrowserHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/BrowserHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/support/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/support/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/DriverSetup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/DriverSetup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/ExcelUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triscent/utilities/ExcelUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestAddNewAddressAndDeleteAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestAddNewAddressAndDeleteAddress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestAllProductCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestAllProductCategory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestBuyAProduct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBuyAProduct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestDDTUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestDDTUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestRemoveItemFromCartDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRemoveItemFromCartDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/exceptions/LoginError.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/exceptions/LoginError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/AddressAddPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/AddressAddPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/AddressHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/AddressHomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/CartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/CartPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/CheckoutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/CheckoutPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/CreditCardPayment$CreditCardType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/CreditCardPayment$CreditCardType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/CreditCardPayment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/CreditCardPayment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/HeaderLinksSupport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/HeaderLinksSupport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/MyAccountOptions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/MyAccountOptions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/OrderConfirmPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/OrderConfirmPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/OrderPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/OrderPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/OrderProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/OrderProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/PaymentMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/PaymentMethod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/ProductHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/ProductHome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/RegisterPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/RegisterPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/ShippingMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/ShippingMethod.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/pages/WebShopHome.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/pages/WebShopHome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/Address$AddressBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/Address$AddressBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/Categories.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/Categories.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/Gender.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/Gender.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductSelectorHelperMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductSelectorHelperMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$COMPUTERS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$ELECTONICS$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$ELECTONICS$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$ELECTONICS$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$ELECTONICS$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$ELECTONICS.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType$ELECTONICS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/ProductType.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/SortBy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/support/SortBy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/support/products/BlueJeans.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/utilities/BrowserHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/utilities/BrowserHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/utilities/CSVUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/utilities/CSVUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/utilities/DriverSetup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/utilities/DriverSetup.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/utilities/ExcelUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/utilities/LogUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/utilities/LogUtility.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triscent/utilities/PropertiesSetUp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triscent/utilities/PropertiesSetUp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestAddNewAddressAndDeleteAddress.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestAddNewAddressAndDeleteAddress.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestAllProductCategory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestAllProductCategory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/TestBuyAProduct.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestBuyAProduct.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestDDTUserDetails.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestDDTUserDetails.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRegister.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRegister.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestRemoveItemFromCartDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestRemoveItemFromCartDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UnitTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UnitTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/UserDetailsPropertiesLoad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserDetailsPropertiesLoad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/traces/testOrderAPrdoduct.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/traces/testOrderAPrdoduct.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/sumee/IdeaProjects/selenium-new" value="394ESqeiQcY0Tw4tlGYYkA1CZ73" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="file:///c%3A/Users/sumee/IdeaProjects/selenium-new/.github/agents/playwright-review.agent.md" />
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="chat-panel" value="GPT-5 Mini#(OpenAI)" />
+      <entry key="agent-panel" value="GPT-5 Mini#(OpenAI)" />
+    </selectedModels>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -240,6 +193,9 @@
     &quot;accountId&quot;: &quot;221e6977-ef07-46bc-a91c-5b9ee138ce3d&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/com/microsoft/playwright/playwright/1.41.0/playwright-1.41.0.jar!/com/microsoft/playwright/Page.class" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -399,7 +355,8 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;TestNG.TestBuyAProduct.testOrderAPrdoduct.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.customization.CustomizationConfigurable&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -412,6 +369,9 @@
       <recent name="C:\Users\Agrawal\IdeaProjects\Automation E2E Selenium\src\main\resources" />
       <recent name="C:\Users\Agrawal\IdeaProjects\Automation E2E Selenium\src" />
       <recent name="C:\Users\Agrawal\IdeaProjects\Automation E2E Selenium\src\main\java\com\triscent\utilities" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sumee\IdeaProjects\selenium-new\src\main\java" />
     </key>
   </component>
   <component name="RunManager" selected="TestNG.TestBuyAProduct.testOrderAPrdoduct">
@@ -518,7 +478,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
       </set>
     </attachedChunks>
   </component>
@@ -598,6 +558,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49853587" weight="0.32967034" />
     </layout>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://E:/Udemy/Selenium/Jars/selenium-server-standalone-3.12.0.jar!/org/openqa/selenium/support/ui/Select.class">
@@ -1007,6 +971,14 @@
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
   </component>
   <component name="masterDetails">
     <states>

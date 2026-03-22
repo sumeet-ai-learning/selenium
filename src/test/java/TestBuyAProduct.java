@@ -29,29 +29,49 @@ public class TestBuyAProduct extends BaseTest{
         HeaderLinksSupport.clickLogin();
         loginPage.withUsername(username).andPassword(password).login();
         assertTrue (verifyUserLoggedIn());
+        System.out.println("Logged in successfully");
+
         selectProductType(ProductType.APPARELS);
         sortBy(SortBy.priceByAscending);
         selectProduct("Casual Golf Belt");
+        System.out.println("Product selected");
+
         setQuantity(4);
         addToCart();
+        System.out.println("Added to cart");
+
         clickShoppingCartButton();
         checkTermsAndConditions();
         checkout();
+        System.out.println("Proceeded to checkout");
+
         selectBillingAddressByIndex(0);
         clickBillingAddressContinueButton();
+        System.out.println("Billing address submitted");
+
         clickShippingAddressContinueButton();
+        System.out.println("Shipping address submitted");
+
         selectShippingMethod(ShippingMethod.ONE_DAY_AIR);
         clickShippingMethodContinueButton();
+        System.out.println("Shipping method submitted");
+
         selectPaymentMethod(PaymentMethod.CREDITCARD);
         clickPaymentMethodContinueButton();
+        System.out.println("Payment method submitted");
+
         selectCreditCardType(CreditCardPayment.CreditCardType.AMEX);
         sendCardHolderName("ABCDEF");
         sendCardNumber("12341234123");
-        selectExpiryYear(String.valueOf(LocalDate.now().getYear()));
+        selectExpiryYear(String.valueOf(LocalDate.now().getYear() + 1)); // Use next year just in case
         selectExpiryMonth("03");
         sendCardCode("1234");
         clickPaymentInformationContinueButton();
+        System.out.println("Payment info submitted");
+
         clickConfirmOrderContinueButton();
-        verifySuccessfulMessage();
+        System.out.println("Confirm order clicked");
+
+        assertTrue(verifySuccessfulMessage());
     }
 }

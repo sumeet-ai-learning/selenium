@@ -31,6 +31,15 @@ public final class DriverSetup {
         return page;
     }
 
+    //Method to invoke Safari (WebKit) Driver
+    public static Page openSafari() {
+        playwright = Playwright.create();
+        browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        context = browser.newContext(new Browser.NewContextOptions().setStrictSelectors(false));
+        page = context.newPage();
+        return page;
+    }
+
     public static void closeBrowser() {
         if (page != null) page.close();
     }

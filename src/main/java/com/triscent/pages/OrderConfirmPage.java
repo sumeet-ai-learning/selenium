@@ -15,6 +15,7 @@ public class OrderConfirmPage {
     private static final String TITLE = "Demo Web Shop. Checkout";
 
     public static boolean verifySuccessfulMessage(){
+        page.waitForURL(URL);
         String message = page.innerText("strong");
         if(message.equals("Your order has been successfully processed!"))
             log.info("Order placed successfully.");
